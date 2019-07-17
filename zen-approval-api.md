@@ -73,7 +73,8 @@ GET https://{host}/workspaceapi/api/inboxitems/type/pending?isApproval=true
 ```javascript
 Content-Type: application/json
 {
-	isApproved:true,
+	isApproved:true, 
     comment: "Test Comment"
 }
 ```
+
