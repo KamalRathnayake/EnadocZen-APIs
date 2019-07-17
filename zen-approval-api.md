@@ -3,8 +3,9 @@
 
 **1. Listing Approval Items**
 
-GET https://{host}/workspaceapi/api/inboxitems/type/pending?isApproval=true
+**GET** https://{host}/workspaceapi/api/inboxitems/type/pending?isApproval=true
 
+*Content-Type: application/json*
 ```javascript
 [
 {
@@ -68,10 +69,10 @@ GET https://{host}/workspaceapi/api/inboxitems/type/pending?isApproval=true
 
 **2. Notifying the user approval to Zen**
 
-2) POST https://zen.enadoc.com:8080/formsapi/approvals/bb6c7052-b651-4331-bc97-3fd48056a6a1
+**POST** https://zen.enadoc.com:8080/formsapi/approvals/bb6c7052-b651-4331-bc97-3fd48056a6a1
 
+*Content-Type: application/json*
 ```javascript
-Content-Type: application/json
 {
 	isApproved:true, 
     comment: "Test Comment"
